@@ -1,0 +1,573 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.w-100{
+    width: 100vw;
+}
+.pink{
+    background-color: #febfcc;
+}
+body {
+    font-family: "Baloo Bhaina 2", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 15px 50px;
+    border-radius: 4.5vh;
+}
+.navbar
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+.nav-section
+{
+    position: relative;
+    height: 96px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.nav-logo img
+{
+    height: 100px;
+}
+.nav-section-one
+{
+    height: 100%;
+    width: 20%;
+    margin-right: 20%;
+}
+.nav-section-two{
+    position: sticky;
+    z-index:100;
+    top: 10px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.nav-items{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-items li{
+    margin: 0 10px;
+}
+.nav-items li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bar-svg{
+    display: flex;
+    height: 47px;
+    width: 51px;
+    border: 2px solid #00a274;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.btn-signin{
+    margin-top: 0;
+    margin-right: 2vw;
+    color: white;
+    background-color: rgba(0, 112, 80, 1);
+}
+.nav-items-vertical{
+    height: 0;
+    background-color: rgb(249,241,230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: height 2s;
+}
+.nav-list{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-item-vertical{
+    margin: 5px 0;
+}
+.nav-item-vertical a{
+    color: #00a274;
+    text-decoration: none;
+}
+.res-button-section{
+    display: none;
+}
+
+
+/* Start of prashantCss */
+
+
+.page{
+ width: 100vw;
+ height: 100vh;
+ 
+
+}
+
+#page1{
+    background-color: rgb(249,241,230);
+    padding-top: 180px;
+}
+
+.form-text h3{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+.form-text h1{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.form-text p{
+    text-align: center;
+    font-weight: 700;
+}
+
+.form{
+    width: 100%;
+    height: 70%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+
+#submit-button{
+    padding: 5px 15px;
+}
+
+
+.form-input{
+    min-width: 250px;
+    width:20%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    
+}
+
+#submit-button{
+    background-color: rgb(218,205,244);
+    min-width: 250px;
+    width:20%;
+    padding:20px 10px;
+    font-size: 1.3rem;
+
+}
+
+#submit-button:hover{
+    background-color: rgb(199, 179, 239);
+    
+}
+
+.messages{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#span-button{
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    background-color: #00a274;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+
+
+#page2{
+
+    background-color: rgb(254,254,255);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.containers{
+    padding-top: 10px;
+    width: 100%;
+    height:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.inner-container{
+    
+    width: 20%;
+    height: 30%;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: box-shadow 0.3s ease-in-out
+}
+
+
+.inner-container:hover{
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.inner-container a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+}
+
+#emailIcon{
+    color: #50dcff;
+}
+
+#whatsapp{
+    color: #25d366;
+}
+
+#location{
+    color: #e42a2a;
+}
+
+.inner-container i{
+    
+    font-size: 2.5rem;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner-container {
+        width: 90%;
+        height: 150px;
+    }
+}
+
+
+
+
+
+#footerPage{
+    background-color:rgb(249,241,230);
+    padding-top: 5px;
+}
+
+
+
+/* end of Prashant Css */
+
+.links{
+
+    background-color: #012241;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 80vh;
+}
+.link-sec{
+    margin-top: 20vh;
+    width: 15vw;
+}
+.link-sec ul{
+    padding: 0;
+}
+.link-sec ul li{
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.link-sec ul li a{
+    text-decoration: none;
+    color: white;
+}
+.comp-logo{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.comp-info img{
+    height: 100%;
+    width: 100%;
+}
+.app-head{
+    margin-bottom: 0;
+}
+.app-image{
+    margin-top: 0;
+    padding-top: 0;
+    height: 70px;
+    width: 200px;
+    background: url("app-image.png");
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    border-radius: 10px;
+    background-size: contain;
+}
+.icons{
+    margin-top: 100px;
+    display: flex;
+}
+.icon{
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid white;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon img{
+    height: 40px;
+}
+.footer{
+    height: 70px;
+    background-color: rgb(249,241,230);
+    color: #00a274;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/**Media Queries**/
+@media only screen and (max-width: 1350px){
+    .app-image{
+        width: 159px;
+    }
+    .icon{
+        width: 41px;
+        height:39px;
+    }
+    .link-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .comp-info{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 940px) {
+    .nav-buttons{
+        display: none;
+    }
+    .navbar{
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-logo{
+        margin-left: 50px;
+    }
+    .nav-section-one{
+        margin-right: 0;
+    }
+    .nav-section{
+        width: 100%;
+        margin-top: 15px;
+        height: 50%;
+        justify-content: space-between;
+    }
+    .nav-section-two{
+        width: 351px;
+        justify-content: flex-start;
+        margin-right: 20px;
+    }
+    .res-button-section{
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #febfcc;
+        width: 100%;
+    }
+    .banner-text-content{
+        margin-top: 50px;
+    }
+    .banner-buttons .btn-signup{
+        margin-top: 0;
+        display: none;
+    }
+    .btn-signup{
+        margin-right: 9vw;
+    }
+    .features{
+        width: 75vw;
+    }
+    .feature-image{
+        margin: 0 3vw;
+    }
+    .test-btn{
+        height: 15px;
+    }
+  }
+
+
+
+
+  /* #contact-button{
+
+    padding: 5px 30px;
+    border-radius: 15px;
+   
+    margin-bottom: 10px;
+    background-color: rgb(239,196,190)
+}
+
+.outer-container h1{
+    font-size: 3rem;
+}
+
+
+
+body{
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.outer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inner-container{
+    width: 100%;
+   
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+}
+
+.container{
+    width: 280px;
+    height:150px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container i{
+    font-size: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+#whatsapp{
+    color: rgb(37, 211, 102);
+}
+
+
+#email{
+    color: rgb(30, 182, 216);
+}
+
+
+#location{
+    color: rgb(213, 37, 37)
+}
+
+
+.container :hover{
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+
+    .outer-container h1{
+        font-size: 2rem;
+    }  
+      
+    .inner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        height: 150px;
+    }
+}
+ */
