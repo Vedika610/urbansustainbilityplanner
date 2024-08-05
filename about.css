@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     font-family: "Baloo Bhaina 2", sans-serif;
     margin: 0;
     padding: 0;
 }
-.btn{
+
+.btn {
     font-size: 1rem;
     font-weight: 100;
     padding: 2.5vh 8vh;
     border-radius: 4.5vh;
 }
-.navbar
-{
+
+/* Navbar */
+.navbar {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 200;
-    height:120px;
+    height: 120px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,8 +26,8 @@ body {
     top: 0;
     z-index: 2;
 }
-.nav-section
-{
+
+.nav-section {
     position: relative;
     height: 80%;
     width: 85%;
@@ -32,19 +35,20 @@ body {
     display: flex;
     align-items: center;
 }
-.nav-logo img
-{
+
+.nav-logo img {
     height: 100px;
 }
-.nav-section-one
-{
+
+.nav-section-one {
     height: 100%;
     width: 20%;
     margin-right: 20%;
 }
-.nav-section-two{
+
+.nav-section-two {
     position: sticky;
-    z-index:100;
+    z-index: 100;
     top: 10px;
     width: 70%;
     height: 70%;
@@ -54,81 +58,92 @@ body {
     border-radius: 35px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-.nav-items{
+
+.nav-items {
     width: 70%;
     display: flex;
     align-items: center;
     list-style-type: none;
 }
-.nav-items li{
+
+.nav-items li {
     margin: 0 10px;
 }
-.nav-items li a{
+
+.nav-items li a {
     text-decoration: none;
     color: black;
 }
-.nav-buttons{
-    width:30%;
+
+.nav-buttons {
+    width: 30%;
     color: #00a274;
     display: flex;
     align-items: center;
 }
-.btn-signin{
+
+.btn-signin {
     margin-top: 0;
     margin-left: 4vh;
     color: white;
     background-color: rgba(0, 112, 80, 1);
 }
-.btn-signin:hover
-{
+
+.btn-signin:hover {
     background-color: #0f61ad;
 }
 
 /* Mission Section */
+.mission {
+    display: flex;
+}
+
 .mission-section {
     padding: 150px;
     height: 350px;
     width: 30%;
     background-color: #f9f9f9;
     text-align: center;
-    z-index: 1;
+    position: relative;
 }
+
 .mission-section h1 {
     font-size: 2.5rem;
     color: #007050;
     margin-bottom: 20px;
 }
+
 .mission-section p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #333;
 }
-.mission{
-    display: flex;
-}
-.banner-image img
-{
-    width:650px;
-    height:960px;
+
+.banner-image img {
+    width: 650px;
+    height: 960px;
 }
 
 /* Team Section */
 .team-section {
     padding: 50px;
-    background-color: rgb(249,241,230);
+    background-color: rgb(249, 241, 230);
     text-align: center;
 }
+
 .team-section h1 {
     font-size: 2.5rem;
     color: #007050;
     margin-bottom: 30px;
 }
+
 .team-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .team-card {
     background: #ffffff;
     border-radius: 10px;
@@ -137,36 +152,45 @@ body {
     width: 250px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .team-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
 .team-card-body {
     padding: 20px;
     text-align: center;
 }
+
 .team-card-body h3 {
     margin: 10px 0;
     font-size: 1.5rem;
     color: #007050;
 }
+
 .team-card-body p {
     font-size: 1rem;
     color: #666;
 }
+
 .team-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 /* Timeline Section */
 .timeline-section {
     padding: 50px;
     background-color: #f9f9f9;
 }
 
-/* Timeline Item Animation */
 .timeline-item {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 3px solid #007050;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 3s ease-out, transform 6s ease-out;
@@ -175,20 +199,6 @@ body {
 .timeline-item.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.timeline-section h1 {
-    font-size: 2.5rem;
-    color: #007050;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.timeline-item {
-    position: relative;
-    padding: 20px;
-    margin: 20px 0;
-    border-left: 3px solid #007050;
 }
 
 .timeline-item::before {
@@ -213,8 +223,8 @@ body {
     color: #333;
 }
 
-
-.links{
+/* Links Section */
+.links {
     background-color: #012241;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -222,23 +232,29 @@ body {
     justify-content: space-evenly;
     color: white;
     height: 80vh;
+    flex-wrap: wrap;
+    padding: 20px 0;
 }
-.link-sec{
+
+.link-sec {
     margin-top: 20vh;
     width: 15vw;
 }
-.link-sec ul{
+
+.link-sec ul {
     padding: 0;
 }
-.link-sec ul li{
+
+.link-sec ul li {
     list-style-type: none;
 }
-.link-sec ul li a{
+
+.link-sec ul li a {
     text-decoration: none;
     color: white;
 }
 
-.comp-logo{
+.comp-logo {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -247,10 +263,12 @@ body {
     background-size: cover;
     background-position: -10px;
 }
-.app-head{
+
+.app-head {
     margin-bottom: 0;
 }
-.app-image{
+
+.app-image {
     margin-top: 0;
     padding-top: 0;
     height: 70px;
@@ -261,11 +279,13 @@ body {
     border-radius: 10px;
     background-size: contain;
 }
-.icons{
+
+.icons {
     margin-top: 100px;
     display: flex;
 }
-.icon{
+
+.icon {
     border-radius: 50%;
     margin-right: 5px;
     border: 2px solid white;
@@ -276,14 +296,15 @@ body {
     align-items: center;
     justify-content: center;
 }
-.icon img{
+
+.icon img {
     height: 40px;
 }
 
 /* Footer Styles */
-.footer{
+.footer {
     height: 70px;
-    background-color: rgb(249,241,230);
+    background-color: rgb(249, 241, 230);
     color: #00a274;
     display: flex;
     align-items: center;
@@ -313,88 +334,129 @@ body {
     transform: translateX(0);
 }
 
-/* Additional Styles */
-.mission-section {
-    padding: 150px;
-    height: 350px;
-    width: 30%;
-    background-color: #f9f9f9;
-    text-align: center;
-    position: relative;
-}
-
-.banner-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40vw;
-    height: 80vh;
-    transform: translateX(200%);
-    transition: transform 0.6s ease-out;
-}
-
-.banner-image img.visible {
-    transform: translateX(0);
-}
-
-
 /* Responsive Design */
-
-@media (max-width: 768px) {
-    .banner-image img {
-        width: 100%; /* Ensures the image takes up the full width on smaller screens */
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-image img {
-        width: 100%;
-        height: auto;
-    }
-}
-
 @media (max-width: 768px) {
     .navbar .nav-section {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .nav-section-one {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .nav-section-two {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        box-shadow: none;
+    }
+
     .nav-items {
+        width: 100%;
         display: block;
+        margin: 0;
     }
+
     .nav-items li {
-        margin-bottom: 10px;
+        margin: 5px 0;
     }
+
+    .nav-buttons {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .mission {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mission-section {
+        width: 100%;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+    }
+
     .team-cards {
         flex-direction: column;
         align-items: center;
     }
+
     .team-card {
         width: 100%;
         max-width: 300px;
+        margin: 10px 0;
+    }
+
+    .links {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .link-sec {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .link-sec ul {
+        padding: 0;
+    }
+
+    .link-sec ul li {
+        margin: 5px 0;
+    }
+
+    .footer {
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-    .mission-section h1 {
-        font-size: 2rem;
-    }
-    .mission-section{
-        height:80vh;
-    }
-    .mission-section p {
-        font-size: 1rem;
-    }
-    .team-card-body h3 {
-        font-size: 1.25rem;
-    }
-    .team-card-body p {
+    .navbar {
         font-size: 0.9rem;
     }
-    .timeline-item h3 {
-        font-size: 1.25rem;
+
+    .nav-logo img {
+        height: 80px;
     }
-    .timeline-item p {
+
+    .btn-signin {
+        padding: 1.5vh 5vh;
         font-size: 0.9rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .app-image {
+        height: 60px;
+        width: 160px;
+    }
+
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .icon img {
+        height: 30px;
     }
 }
