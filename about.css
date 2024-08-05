@@ -96,32 +96,44 @@ body {
 /* Mission Section */
 .mission {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
 .mission-section {
-    padding: 150px;
-    height: 350px;
-    width: 30%;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
     background-color: #f9f9f9;
     text-align: center;
-    position: relative;
+    margin: 10px;
 }
 
 .mission-section h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #007050;
     margin-bottom: 20px;
 }
 
 .mission-section p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: #333;
 }
 
+.banner-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 .banner-image img {
-    width: 650px;
-    height: 960px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Team Section */
@@ -231,14 +243,15 @@ body {
     display: flex;
     justify-content: space-evenly;
     color: white;
-    height: 80vh;
     flex-wrap: wrap;
     padding: 20px 0;
 }
 
 .link-sec {
-    margin-top: 20vh;
-    width: 15vw;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
 }
 
 .link-sec ul {
@@ -261,7 +274,7 @@ body {
     margin-bottom: 10px;
     background-image: url("logo.jpeg");
     background-size: cover;
-    background-position: -10px;
+    background-position: center;
 }
 
 .app-head {
@@ -269,13 +282,11 @@ body {
 }
 
 .app-image {
-    margin-top: 0;
-    padding-top: 0;
     height: 70px;
     width: 200px;
     background: url("app-image.png");
     background-repeat: no-repeat;
-    background-position: 0px 5px;
+    background-position: center;
     border-radius: 10px;
     background-size: contain;
 }
@@ -283,6 +294,7 @@ body {
 .icons {
     margin-top: 100px;
     display: flex;
+    justify-content: center;
 }
 
 .icon {
@@ -374,23 +386,21 @@ body {
     .mission {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .mission-section {
         width: 100%;
-        padding: 50px 20px;
-        height: auto;
+        max-width: 100%;
     }
 
     .banner-image img {
-        width: 100%;
+        width: 90%;
+        max-width: 100%;
         height: auto;
     }
 
     .team-cards {
         flex-direction: column;
-        align-items: center;
     }
 
     .team-card {
@@ -400,30 +410,32 @@ body {
     }
 
     .links {
-        height: auto;
         flex-direction: column;
         align-items: center;
-        padding: 20px 0;
     }
 
     .link-sec {
         width: 100%;
-        text-align: center;
+        max-width: 150px;
         margin: 10px 0;
     }
 
-    .link-sec ul {
-        padding: 0;
+    .app-image {
+        height: 60px;
+        width: 160px;
     }
 
-    .link-sec ul li {
-        margin: 5px 0;
+    .icons {
+        margin-top: 50px;
     }
 
-    .footer {
-        height: auto;
-        padding: 10px;
-        font-size: 0.9rem;
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .icon img {
+        height: 30px;
     }
 }
 
@@ -441,22 +453,24 @@ body {
         font-size: 0.9rem;
     }
 
-    .container {
+    .mission-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .mission-section p {
+        font-size: 0.9rem;
+    }
+
+    .team-card-body h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-card-body p {
+        font-size: 0.9rem;
+    }
+
+    .banner-image img {
         width: 100%;
-        padding: 0 10px;
-    }
-
-    .app-image {
-        height: 60px;
-        width: 160px;
-    }
-
-    .icon {
-        height: 40px;
-        width: 40px;
-    }
-
-    .icon img {
-        height: 30px;
+        height: auto;
     }
 }
