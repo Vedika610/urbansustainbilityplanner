@@ -18,52 +18,51 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 200;
-    height: 120px;
+    height: 80px; /* Adjusted for better mobile view */
     width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 2;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .nav-section {
     position: relative;
-    height: 80%;
-    width: 85%;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav-logo img {
-    height: 100px;
+    height: 60px; /* Adjusted for better mobile view */
 }
 
 .nav-section-one {
-    height: 100%;
-    width: 20%;
-    margin-right: 20%;
+    display: none; /* Hides section for simplicity on mobile */
 }
 
 .nav-section-two {
-    position: sticky;
-    z-index: 100;
-    top: 10px;
-    width: 70%;
-    height: 70%;
     display: flex;
+    flex: 1;
+    justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 35px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .nav-items {
-    width: 70%;
     display: flex;
     align-items: center;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-items li {
@@ -76,10 +75,7 @@ body {
 }
 
 .nav-buttons {
-    width: 30%;
-    color: #00a274;
-    display: flex;
-    align-items: center;
+    display: none; /* Hides section for simplicity on mobile */
 }
 
 .btn-signin {
@@ -96,18 +92,25 @@ body {
 /* Mission Section */
 .mission {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     background-color: #f9f9f9;
     text-align: center;
     margin: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .mission-section h1 {
@@ -126,14 +129,19 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
 
 .banner-image img {
     width: 100%;
-    max-width: 650px;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Team Section */
@@ -348,54 +356,46 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar .nav-section {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-section-one {
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .nav-section-two {
-        width: 100%;
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
-        box-shadow: none;
     }
 
-    .nav-items {
+    .nav-section {
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
-        display: block;
-        margin: 0;
     }
 
-    .nav-items li {
-        margin: 5px 0;
-    }
-
-    .nav-buttons {
+    .nav-section-one {
+        display: block; /* Shows section on mobile */
         width: 100%;
-        margin-top: 10px;
         text-align: center;
     }
 
-    .mission {
+    .nav-items {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+    }
+
+    .nav-buttons {
+        display: block; /* Shows section on mobile */
+        margin-top: 10px;
     }
 
     .mission-section {
-        width: 100%;
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
     }
 
     .banner-image img {
-        width: 90%;
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 
@@ -445,7 +445,7 @@ body {
     }
 
     .nav-logo img {
-        height: 80px;
+        height: 60px;
     }
 
     .btn-signin {
